@@ -41,6 +41,7 @@ const projects: Project[] = [
     excerpt:
       "30% CO₂-Reduktion, 75% optimierte Abfallverwertung und 1,5–2,8 Mio CHF volkswirtschaftlicher Zusatznutzen durch systematische Analyse.",
     date: "2024",
+    link: "#referenz",
   },
 ];
 
