@@ -8,7 +8,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Christian Schlatter"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-[center_20%]"
         />
         <div className="hero-gradient absolute inset-0" />
       </div>
