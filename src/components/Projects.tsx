@@ -6,6 +6,7 @@ interface Project {
   category: string;
   excerpt: string;
   date: string;
+  link?: string;
 }
 
 const projects: Project[] = [
@@ -40,6 +41,7 @@ const projects: Project[] = [
     excerpt:
       "30% CO₂-Reduktion, 75% optimierte Abfallverwertung und 1,5–2,8 Mio CHF volkswirtschaftlicher Zusatznutzen durch systematische Analyse.",
     date: "2024",
+    link: "#referenz",
   },
 ];
 
@@ -53,26 +55,31 @@ const Projects = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((p) => (
-            <article
-              key={p.id}
-              className="project-card bg-background border border-rule p-6 group cursor-pointer"
-            >
-              <div className="flex items-center justify-between mb-3">
-                <span className="section-label text-[10px]">{p.category}</span>
-                <span className="font-body text-xs text-muted-foreground">{p.date}</span>
-              </div>
-              <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                {p.title}
-              </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4">
-                {p.excerpt}
-              </p>
-              <span className="inline-flex items-center gap-2 font-body text-sm font-semibold text-primary group-hover:gap-3 transition-all">
-                Mehr erfahren <ArrowRight size={14} />
-              </span>
-            </article>
-          ))}
+          {projects.map((p) => {
+            const Wrapper = p.link ? 'a' : 'div';
+            const wrapperProps = p.link ? { href: p.link } : {};
+            return (
+              <Wrapper
+                key={p.id}
+                {...wrapperProps}
+                className="project-card bg-background border border-rule p-6 group cursor-pointer block"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="section-label text-[10px]">{p.category}</span>
+                  <span className="font-body text-xs text-muted-foreground">{p.date}</span>
+                </div>
+                <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {p.title}
+                </h3>
+                <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4">
+                  {p.excerpt}
+                </p>
+                <span className="inline-flex items-center gap-2 font-body text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+                  Mehr erfahren <ArrowRight size={14} />
+                </span>
+              </Wrapper>
+            );
+          })}
         </div>
       </div>
     </section>
