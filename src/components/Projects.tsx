@@ -6,6 +6,7 @@ interface Project {
   category: string;
   excerpt: string;
   date: string;
+  link?: string;
 }
 
 const projects: Project[] = [
