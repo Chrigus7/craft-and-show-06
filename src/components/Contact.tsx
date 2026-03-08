@@ -13,7 +13,7 @@ const Contact = () => {
               Lassen Sie uns Ihr Projekt betrachten<span className="claim-dot">.</span>
             </h2>
             <p className="font-body text-base text-primary-foreground/70 mt-4 leading-relaxed">
-              Ich freue mich auf Ihre Nachricht – für eine kostenlose Ersteinschätzung oder ein unverbindliches Gespräch.
+              Ich freue mich auf Ihre Nachricht – für ein unverbindliches Gespräch.
             </p>
           </div>
 

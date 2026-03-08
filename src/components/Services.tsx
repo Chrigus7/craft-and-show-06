@@ -29,7 +29,7 @@ const services = [
   {
     icon: Handshake,
     title: "Kostenlose Ersteinschätzung",
-    text: "Lassen Sie uns Ihr Projekt betrachten – und sein Potential sichtbar machen. Unverbindlich und kompetent.",
+    text: "Potentialabschätzung innert 2 Tagen",
   },
 ];
 
