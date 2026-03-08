@@ -2,7 +2,7 @@ import heroImage from "@/assets/christian-schlatter.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[65vh] flex items-center overflow-hidden pt-20">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
