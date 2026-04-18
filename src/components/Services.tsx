@@ -28,7 +28,7 @@ const services = [
   },
   {
     icon: Handshake,
-    title: "Kostenlose Ersteinschätzung",
+    title: "Unkomplizierte Ersteinschätzung",
     text: "Potentialabschätzung innert 2 Tagen",
   },
 ];
